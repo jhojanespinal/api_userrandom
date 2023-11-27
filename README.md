@@ -1,6 +1,6 @@
 # Generador de Usuarios Aleatorios 🤷‍♂️🚀
 
-Este proyecto genera un listado de usuarios aleatorios y los muestra en tarjetas con información como su nombre y correo electrónico. También incluye funcionalidad de paginación para navegar entre diferentes páginas de usuarios.
+Este proyecto genera un listado de usuarios aleatorios y los muestra en tarjetas con información con su nombre y correo electrónico. También incluye funcionalidad de paginación para navegar entre diferentes páginas de usuarios.
 
 ## Capturas de Pantalla🧑‍💻👨‍💻
 
