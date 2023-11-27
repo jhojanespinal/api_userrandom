@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Open+Sans:wght@300;400;700&display=swap');
+
+body {
+    background-color: black;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.loader h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: cascadia code;
+}
+
+.loader-bar {
+    height: 25px;
+    width: 6px;
+    margin: 0 3px;
+    border-radius: 20px;
+    animation: loader 2s ease-in-out infinite;
+}
+
+.bar-1 {
+    background: linear-gradient(to right, #00e6e6, #00ccff, #0099ff, #0066ff);
+    animation-delay: 0s;
+    box-shadow: 0px 0px 15px 3px #00e6e6;
+}
+
+.bar-2 {
+    background: linear-gradient(to right, #00ccff, #0099ff, #0066ff, #00e6e6);
+    animation-delay: 0.1s;
+    box-shadow: 0px 0px 15px 3px #00ccff;
+}
+
+.bar-3 {
+    background: linear-gradient(to right, #0099ff, #0066ff, #00e6e6, #00ccff);
+    animation-delay: 0.2s;
+    box-shadow: 0px 0px 15px 3px #0099ff;
+}
+
+.bar-4 {
+    background: linear-gradient(to right, #0066ff, #00e6e6, #00ccff, #0099ff);
+    animation-delay: 0.3s;
+    box-shadow: 0px 0px 15px 3px #0066ff;
+}
+
+@keyframes loader {
+    0% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(2);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+/* card */
+.user-card {
+    width: 260px;
+    height: 254px;
+    background: rgb(223, 225, 235);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.user-image {
+    border-radius: 10px;
+}
+
+.user-card p {
+    font-family: cascadia code;
+}
+
+.user-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* boton anterior*/
+.btnA {
+    background-color: #00BFA6;
+    padding: 14px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px dashed #00BFA6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+}
+
+.btnA span:last-child {
+    display: none;
+}
+
+.btnA:hover {
+    transition: .4s;
+    border: 2px dashed #00BFA6;
+    background-color: #fff;
+    color: #00BFA6;
+}
+
+.btnA:active {
+    background-color: #87dbd0;
+}
+
+
+/* boton siguiente*/
+.btnS {
+    background: #7079f0;
+    color: white;
+    font-family: inherit;
+    padding: 0.45em;
+    padding-left: 1.0em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3em;
+}
+
+.iconButton {
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7a8cf3;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.btnS:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em #5566c2;
+}
+
+.btnS:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em #5566c2;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination button {
+    margin: 0 5px;
+}
